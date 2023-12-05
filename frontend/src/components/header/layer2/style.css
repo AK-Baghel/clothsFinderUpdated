@@ -1,0 +1,17 @@
+.layer2Container {
+    padding: 0.4rem 4rem;
+    /* width: 90vw; */
+    display: flex;
+    gap: 0.5rem;
+    justify-content: end;
+}
+
+.layerIcons {
+    font-size: 1.6rem;
+}
+
+@media (max-width:900px) {
+    .layer2Container {
+        display: none;
+    }
+}

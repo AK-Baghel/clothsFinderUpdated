@@ -1,0 +1,22 @@
+.topCarouselDataContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    text-transform: uppercase;
+    cursor: grab;
+}
+
+.topCarouselDataText {
+    color: white;
+    padding: 1rem;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+@media (max-width:900px) {
+    .topCarouselDataText {
+        height: 4vh;
+        text-align: center;
+    }
+}

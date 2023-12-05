@@ -1,0 +1,145 @@
+.layer3ContainerBox1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    /* padding: 1rem; */
+
+}
+
+.layer3Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.layer3Button {
+    font-size: 1.3rem;
+    color: gray;
+}
+
+.layer3Buttons {
+    display: flex;
+    gap: 2rem;
+
+}
+
+.layer3ButtonsMobile {
+    display: none;
+}
+
+.layer3ContainerBox2 {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    gap: 1rem;
+    transition: all 0.5s ease;
+
+}
+
+.layer3Item {
+    text-transform: uppercase;
+    padding: 1rem;
+    letter-spacing: 3px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.bannerHoverUnderline {
+    display: inline-block;
+    position: relative;
+}
+
+.bannerHoverUnderline:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.layer3Logo {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    color: red;
+    text-transform: uppercase;
+}
+
+.bannerHoverUnderline:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.layerContainerCross {
+    position: absolute;
+    top: 4rem;
+    left: 18rem;
+    z-index: 99;
+    font-size: 2.5rem;
+    color: rgb(56, 56, 56);
+    display: none;
+}
+
+.barsHide {
+    display: none;
+}
+
+@media (max-width:900px) {
+    .layerContainerCross {
+        display: block;
+    }
+
+    .layer3ContainerBox2 {
+        width: 50vh;
+        background-color: white;
+        align-items: flex-start;
+        flex-direction: column;
+        position: fixed;
+        /* justify-content: start; */
+        z-index: 9;
+        top: 0;
+        height: 100vh;
+        left: 0;
+        color: white;
+        gap: 0.5rem;
+    }
+
+    .layer3Item {
+        color: black;
+        font-size: 1rem;
+    }
+
+
+    .headerMobile {
+        transform: translateX(-60rem);
+        transition: all 1s ease;
+    }
+
+    .layer3Buttons {
+        display: none;
+    }
+
+    .layer3ButtonsMobile {
+        display: flex;
+        gap: 1.3rem;
+
+    }
+
+    .searchHide {
+        display: none;
+    }
+
+    .barsHide {
+        display: block;
+        font-size: 1.7rem;
+    }
+
+}
