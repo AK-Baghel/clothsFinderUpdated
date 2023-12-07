@@ -1,0 +1,82 @@
+.productCardContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    padding: 0.5rem;
+    margin-block: 1rem;
+    /* box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px; */
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    /* background-color: rgb(201, 201, 201); */
+
+    border-radius: 20px;
+    gap: 1rem;
+    width: fit-content;
+    margin-inline: 1rem;
+    min-width: 255px;
+}
+
+.productCardImg {
+    border-radius: 20px;
+    width: 250px;
+    height: 300px;
+}
+
+.productCardTitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.productCardButton {
+    font-weight: 700;
+    color: white;
+    background-color: orange;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.productCardButtons {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.productCardButtonBlue {
+    /* font-weight: 700; */
+    font-size: 0.8rem;
+    color: white;
+    background-color: rgb(76, 76, 231);
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.productCardButtonBlue:hover {
+    background-color: rgb(108, 108, 238);
+    text-decoration: underline;
+
+}
+
+.productCardButtonRed {
+    /* font-weight: 700; */
+    font-size: 0.8rem;
+    color: white;
+    background-color: rgb(5, 126, 5);
+    padding: 5px 13px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.productCardButtonRed:hover {
+    background-color: rgb(7, 168, 7);
+    text-decoration: underline;
+
+}
+
+.productCardButton:hover {
+    background-color: rgb(175, 114, 0);
+    text-decoration: underline;
+}

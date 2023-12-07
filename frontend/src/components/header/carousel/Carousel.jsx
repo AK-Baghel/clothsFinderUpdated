@@ -1,11 +1,13 @@
 import React from 'react'
 import "./style.css"
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation, A11y } from 'swiper/modules';
+import { EffectFade } from 'swiper/modules';
+import "swiper/css/effect-fade";
+
 
 function Carousel() {
 
@@ -18,17 +20,16 @@ function Carousel() {
     return (
         <Swiper
             spaceBetween={0}
-            centeredSlides={true}
-
-            autoplay={{
-                delay: 3500,
-                disableOnInteraction: false,
-            }}
+            slidesPerView={1}
+            navigation={true}
+            effect={"fade"}
+            speed={1500}
+            autoplay={{ delay: 3000 }}
             pagination={{
                 clickable: true,
             }}
-            navigation={true}
-            modules={[Autoplay, Pagination, Navigation]}
+            loop={true}
+            modules={[Navigation, Pagination, Autoplay, A11y, EffectFade]}
             className="mySwiper"
         >
 

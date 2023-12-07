@@ -1,0 +1,31 @@
+.homeHeadline {
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    /* color: red; */
+}
+
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-block: 4rem;
+}
+
+.collectionFlex {
+    width: 90vw;
+    gap: 1rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.homeVideo {
+    width: 90vw;
+    /* overflow: hidden; */
+    height: 70vh;
+}

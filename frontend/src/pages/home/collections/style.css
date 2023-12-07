@@ -1,0 +1,38 @@
+.collectionsContainer {
+    width: 280px;
+    height: fit-content;
+    border-radius: 1px solid red;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.collectionsImg {
+    width: 280x;
+    height: 300px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+
+}
+
+.collectionsBox {
+    /* position: absolute;
+    left: 50%;
+    bottom: 0; */
+    /* transform: translate(-50%, 50%); */
+    z-index: 99;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    text-align: center;
+    background-color: white;
+}
+
+
+.collectionsImg:hover {
+    transform: scale(1.1);
+}
