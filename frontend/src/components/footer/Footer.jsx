@@ -44,8 +44,20 @@ function Footer() {
                         <div className="footerBox1SectionItem">xysgas@gmials.com</div>
                     </div>
                 </div>
+                <div className="footerBox1Section">
+                    <div className="footerBox1SectionHeading">NEWSLETTER</div>
+                    <div className="footerBox1SectionItems">
+                        <div className="footerBox1SectionItem">Subscribe to our mailing list to get the new updates!</div>
+                        <div className="footerBox1SectionNewsLetterBox">
+                            <input className='footerBox1SectionItemInput' type="email" placeholder='Enter Your Email' />
+                            <div className='footerBox1SectionItemButton'>SIGNUP</div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
             <div className="footerBox2"></div>
+
             <div className="footerBox3">
                 <div className="footerBox3Text">
                     Copyright © Cloths Finder.  All rights reserved.

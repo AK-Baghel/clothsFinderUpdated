@@ -71,9 +71,7 @@
 }
 
 .layer3Logo {
-    font-size: 1.5rem;
-    padding: 0.5rem;
-    color: red;
+    width: 13rem;
     text-transform: uppercase;
 }
 
@@ -149,6 +147,131 @@
     color: rgb(34, 34, 34);
 }
 
+
+
+
+
+
+
+.headerDropDown {
+    font-size: 2rem;
+}
+
+.headerDrop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.headerPopUpBox {
+    position: absolute;
+    top: 3vh;
+    color: rgb(255, 255, 255);
+    /* background-color: yellow; */
+    padding-top: 1.5rem;
+    width: 25rem;
+    /* right: 5rem; */
+    left: -5rem;
+    /* animation: myAnim 0.5s ease 0s 1 normal forwards; */
+    z-index: 9;
+}
+
+.headerPopUpBoxItems {
+    /* background-color: rgb(212, 0, 32); */
+    background-color: white;
+    /* color: rgb(65, 65, 65); */
+    color: black;
+    padding: 1rem 1rem;
+    overflow: hidden;
+    width: 25rem;
+    cursor: pointer;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style: none;
+    /* font-weight: 600; */
+}
+
+.headerPopUpBoxItem:hover {
+    text-decoration: underline;
+    text-decoration-color: #008081;
+}
+
+.headerPopUpBoxItem {
+    width: fit-content;
+    height: fit-content;
+    font-size: 0.9rem;
+    margin-inline: 10px;
+    margin-block: 10px;
+}
+
+.headerPopUpBoxButton {
+    color: white;
+    background-color: #008081;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.headerPopUpBoxButton:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width:931px) {
+
+    .hidePopupForMobile {
+        display: none;
+    }
+
+    .headerPopUpBox {
+        position: static;
+        color: rgb(255, 255, 255);
+        /* background-color: yellow; */
+        padding: 0rem;
+        /* margin-right: 5rem; */
+        /* margin: -1rem 5rem -1rem 0rem; */
+        /* width: 80vw; */
+        /* height: 20vh; */
+        animation: none;
+    }
+
+    .headerPopUpBoxItems {
+        /* background-color: blueviolet; */
+        /* flex-direction: column;
+        flex-wrap: nowrap; */
+        padding: 1rem 2rem;
+        width: 80vw;
+    }
+
+    .headerPopUpBoxItems {
+        /* background-color: blueviolet; */
+        background-color: white;
+        color: rgb(65, 65, 65);
+        padding: 1rem 1rem;
+        overflow: scroll;
+        height: 70vh;
+        gap: 0.7rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .headerPopUpBoxItem {
+        width: fit-content;
+        height: fit-content;
+        font-size: 0.9rem;
+        margin-inline: 10px;
+        margin-block: 10px;
+    }
+
+}
+
+
+
 @media (max-width:900px) {
     .layerContainerCross {
         display: block;
@@ -165,7 +288,7 @@
         flex-direction: column;
         position: fixed;
         /* justify-content: start; */
-        z-index: 9;
+        z-index: 999999;
         top: 0;
         height: 100vh;
         left: 0;

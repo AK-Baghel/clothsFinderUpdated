@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./style.css"
 
-function TestimonialTile({ img, data }) {
+
+
+function TestimonialTile({ img, data, enquireForm }) {
+
+
+
     return (
 
         <div className="productCardContainer">
@@ -9,8 +14,10 @@ function TestimonialTile({ img, data }) {
             <div className="productCardTitle">{data}</div>
             <div className="productCardButtons">
                 <div className="productCardButtonBlue">View Detail</div>
-                <div className="productCardButtonRed">Book Now</div>
+                <div className="productCardButtonRed" onClick={() => { enquireForm(img, data) }}>Book Now</div>
             </div>
+
+
         </div>
     )
 }

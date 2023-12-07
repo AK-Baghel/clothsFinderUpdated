@@ -80,3 +80,8 @@
     background-color: rgb(175, 114, 0);
     text-decoration: underline;
 }
+
+.updatingHere {
+    position: fixed;
+    top: 0;
+}
