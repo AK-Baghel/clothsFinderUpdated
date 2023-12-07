@@ -34,6 +34,7 @@
     width: 90vw;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     padding: 0.5rem;
     gap: 1rem;
@@ -42,6 +43,8 @@
 }
 
 .layer3Item {
+    min-width: fit-content;
+    text-align: center;
     text-transform: uppercase;
     padding: 1rem;
     letter-spacing: 3px;

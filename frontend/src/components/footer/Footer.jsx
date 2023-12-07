@@ -48,7 +48,7 @@ function Footer() {
             <div className="footerBox2"></div>
             <div className="footerBox3">
                 <div className="footerBox3Text">
-                    Copyright © SS Medical Equipments. All rights reserved.
+                    Copyright © Cloths Finder.  All rights reserved.
                 </div>
                 <div className="footerBox3Socials">
                     <FaInstagramSquare className='footerSocial' />

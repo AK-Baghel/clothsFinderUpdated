@@ -1,5 +1,5 @@
 .displayBanner {
-    width: 90vw;
+    width: 100vw;
     height: 50vh;
     background-image: url('https://st3.depositphotos.com/9747634/32010/i/450/depositphotos_320104748-stock-photo-hangers-with-different-clothes-in.jpg');
     background-position: center;
@@ -9,7 +9,7 @@
 }
 
 .displayBannerContainer {
-    width: 90vw;
+    width: 100vw;
     height: 50vh;
     display: flex;
     justify-content: center;
@@ -75,10 +75,10 @@
     }
 
     .displayBannerContainer {
-        height: 40vh;
+        height: 30vh;
     }
 
     .displayBanner {
-        height: 40vh;
+        height: 30vh;
     }
 }
