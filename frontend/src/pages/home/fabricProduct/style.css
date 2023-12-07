@@ -1,8 +1,8 @@
 .fabricProductContainer {
-    width: 80vw;
+    width: 90vw;
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
