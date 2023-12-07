@@ -3,6 +3,8 @@
     color: blacke;
     padding-block: 4rem 2rem;
     display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
     flex-direction: column;
     gap: 2rem;
 }
@@ -63,8 +65,28 @@
 }
 
 .footerBox3 {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    /* justify-content: center; */
+    /* align-items: center; */
     padding: 1rem;
+    margin: 0 auto;
+}
+
+.footerBox3Socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.footerSocial {
+    font-size: 1.5rem;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.footerSocial:hover {
+    color: red;
 }
 
 @media(max-width:600px) {
@@ -72,5 +94,17 @@
         justify-content: start;
         margin-inline: 2rem;
         gap: 3rem;
+    }
+
+    .footerBox3 {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .footerBox3Text {
+        text-align: center;
+        font-size: 0.8rem;
     }
 }

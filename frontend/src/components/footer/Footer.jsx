@@ -1,6 +1,11 @@
 import React from 'react'
 import "./style.css"
 import { useNavigate } from 'react-router-dom'
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+
+
 
 function Footer() {
     const navigate = useNavigate();
@@ -44,6 +49,12 @@ function Footer() {
             <div className="footerBox3">
                 <div className="footerBox3Text">
                     Copyright © SS Medical Equipments. All rights reserved.
+                </div>
+                <div className="footerBox3Socials">
+                    <FaInstagramSquare className='footerSocial' />
+                    <FaFacebookSquare className='footerSocial' />
+                    <FaLinkedin className='footerSocial' />
+
                 </div>
             </div>
         </footer>
